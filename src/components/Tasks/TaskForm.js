@@ -40,7 +40,7 @@ const TaskForm = () => {
         }
 
         // Insert with user_id
-        const { data, error } = await supabase
+        const { error } = await supabase
           .from("tasks")
           .insert([{ task: taskContent, user_id: user.id }])
           .select();
