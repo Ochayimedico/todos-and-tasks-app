@@ -1,0 +1,223 @@
+.header {
+  width: 100%;
+  height: 3rem;
+  background-color: #0077b6;
+  margin: 0 0 4rem 0;
+  display: grid;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 0%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-and-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  margin-left: 2rem;
+}
+.auth {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 14rem;
+  margin-right: 2rem;
+}
+.login-link {
+  margin: 0 0.5rem;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 11rem;
+}
+
+.header h3 {
+  margin: 0;
+  color: white;
+}
+
+.header li {
+  font: inherit;
+  font-weight: 500;
+  border: 1px solid #0077b6;
+  background: #0077b6;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.15rem;
+  border-radius: 1rem;
+  text-align: center;
+  list-style: none;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header li:hover,
+.header li:active {
+  background: #0096c7;
+  border-color: #0096c7;
+}
+
+.header a.active {
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid white;
+}
+li.logout-button {
+  font: inherit;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.15rem;
+  border-radius: 1.15rem;
+  text-align: center;
+  width: 4rem;
+}
+
+li.logout-button:hover,
+li.logout-button:active {
+  /* background-color: #ccc; */
+  background: #0096c7;
+
+  border-color: #0096c7;
+}
+div.username {
+  /* font-weight: 600; */
+  width: 5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+  margin-right: 0.25rem;
+  display: flex;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .header {
+    height: 2.5rem;
+  }
+  .home-and-links {
+    width: 17rem;
+    margin-left: 0.5rem;
+  }
+  .auth {
+    width: 8.5rem;
+    margin-right: 1rem;
+  }
+  .logout-button {
+    width: 8.5rem;
+  }
+
+  .links {
+    width: 7rem;
+  }
+
+  .header li {
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 0.7rem;
+  }
+
+  .header a.active {
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid white;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  div.username {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    height: 2rem;
+  }
+  .home-and-links {
+    width: 14rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .auth {
+    width: 6rem;
+    margin-right: 0.5rem;
+  }
+  .logout-button {
+    width: 6rem;
+  }
+
+  .links {
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header li {
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.6rem;
+    border-radius: 0.7rem;
+  }
+
+  .header a.active {
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid white;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  div.username {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    height: 1.8rem;
+  }
+  .home-and-links {
+    width: 12rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .auth {
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
+  .logout-button {
+    width: 4rem;
+  }
+
+  .links {
+    width: 4rem;
+  }
+
+  .header li {
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.5rem;
+    border-radius: 0.7rem;
+  }
+
+  h3 {
+    font-size: 0.6rem;
+  }
+  div.username {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  margin: 10% auto;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+}
+.text-center {
+  margin: 1rem 0;
+  color: white;
+}
+.link {
+  color: #0077b6;
+}

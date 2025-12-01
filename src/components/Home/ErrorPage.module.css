@@ -1,0 +1,19 @@
+.content {
+  margin: 3rem auto;
+  text-align: center;
+  width: 85%;
+}
+h2 {
+  color: white;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: #0096c7;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+}
